@@ -1,6 +1,6 @@
 class AppConfig {
   // Production API (deployed on Render)
-  static const String baseUrl = 'https://hometutorhub-api.onrender.com';
+  static const String baseUrl = 'https://hometutorhub-1.onrender.com/';
   static const String apiUrl = '$baseUrl/api';
   
   // For local testing, uncomment this:
