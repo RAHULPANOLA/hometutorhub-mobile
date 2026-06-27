@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import '../config.dart';
 import 'course_details_screen.dart';
+import 'teacher_live_classes_screen.dart';
 
 class MyEnrollmentsScreen extends StatefulWidget {
   const MyEnrollmentsScreen({super.key});
