@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'config/app_config.dart';
+import '../config.dart';
 import 'course_details_screen.dart';
 
 class MyEnrollmentsScreen extends StatefulWidget {
