@@ -21,7 +21,7 @@ import 'student_edit_profile_screen.dart';
 import 'student_change_password_screen.dart';
 import 'my_enrollments_screen.dart';
 import 'course_details_screen.dart';
-import '../config/app_config.dart';
+import '../config.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
