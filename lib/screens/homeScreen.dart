@@ -170,143 +170,145 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // ==================== STUDENT DASHBOARD ====================
-  Widget _buildStudentDashboard() {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Welcome Card
-          _buildWelcomeCard('Student'),
-          const SizedBox(height: 20),
+Widget _buildStudentDashboard() {
+  return SingleChildScrollView(
+    padding: const EdgeInsets.all(20),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Welcome Card
+        _buildWelcomeCard('Student'),
+        const SizedBox(height: 20),
 
-          // Quick Stats
-          _buildStudentStats(),
-          const SizedBox(height: 20),
+        // Quick Stats
+        _buildStudentStats(),
+        const SizedBox(height: 20),
 
-          // Quick Actions Grid
-          _buildQuickActionsGrid(
-            items: [
-              QuickAction(
-                icon: Icons.post_add,
-                label: 'Post Request',
-                color: const Color(0xFF6C63FF),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const PostRequestScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.search,
-                label: 'Find Tutors',
-                color: const Color(0xFF4CAF50),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const FindTeachersScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.list_alt,
-                label: 'My Requests',
-                color: const Color(0xFFF59E0B),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MyRequestsScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.monetization_on,
-                label: 'Buy Points',
-                color: const Color(0xFFFF9800),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const BuyPointsScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.home_work,
-                label: 'Offline Request',
-                color: const Color(0xFF10B981),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const OfflineRequestScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.history,
-                label: 'Offline Status',
-                color: const Color(0xFF8B5CF6),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MyOfflineRequestsScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.assessment,
-                label: 'My Courses',
-                color: const Color(0xFF3B82F6),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MyEnrollmentsScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.edit,
-                label: 'Edit Profile',
-                color: const Color(0xFFF59E0B),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const StudentEditProfileScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.star_rate,
-                label: 'Give Feedback',
-                color: const Color(0xFFEF4444),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const FeedbackScreen()),
-                  );
-                },
-              ),
-              QuickAction(
-                icon: Icons.key,
-                label: 'Change Password',
-                color: const Color(0xFF8B5CF6),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const StudentChangePasswordScreen()),
-                  );
-                },
-              ),
-            ],
-          ),
-          const SizedBox(height: 20),
+        // Quick Actions Grid
+        _buildQuickActionsGrid(
+          items: [
+            QuickAction(
+              icon: Icons.post_add,
+              label: 'Post Request',
+              color: const Color(0xFF6C63FF),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PostRequestScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.search,
+              label: 'Find Tutors',
+              color: const Color(0xFF4CAF50),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FindTeachersScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.list_alt,
+              label: 'My Requests',
+              color: const Color(0xFFF59E0B),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyRequestsScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.monetization_on,
+              label: 'Buy Points',
+              color: const Color(0xFFFF9800),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BuyPointsScreen()),
+                );
+              },
+            ),
+            // ========== NEW: My Courses ==========
+            QuickAction(
+              icon: Icons.assessment,
+              label: 'My Courses',
+              color: const Color(0xFF3B82F6),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyEnrollmentsScreen()),
+                );
+              },
+            ),
+            // =====================================
+            QuickAction(
+              icon: Icons.home_work,
+              label: 'Offline Request',
+              color: const Color(0xFF10B981),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const OfflineRequestScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.history,
+              label: 'Offline Status',
+              color: const Color(0xFF8B5CF6),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyOfflineRequestsScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.edit,
+              label: 'Edit Profile',
+              color: const Color(0xFFF59E0B),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const StudentEditProfileScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.star_rate,
+              label: 'Give Feedback',
+              color: const Color(0xFFEF4444),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FeedbackScreen()),
+                );
+              },
+            ),
+            QuickAction(
+              icon: Icons.key,
+              label: 'Change Password',
+              color: const Color(0xFF8B5CF6),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const StudentChangePasswordScreen()),
+                );
+              },
+            ),
+          ],
+        ),
+        const SizedBox(height: 20),
 
-          // How it works
-          _buildHowItWorks(),
-        ],
-      ),
-    );
-  }
+        // How it works
+        _buildHowItWorks(),
+      ],
+    ),
+  );
+}
 
   // ==================== TEACHER DASHBOARD ====================
   Widget _buildTeacherDashboard() {
