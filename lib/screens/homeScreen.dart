@@ -274,7 +274,7 @@ Widget _buildStudentDashboard() {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const StudentEditProfileScreen()),
+                  MaterialPageRoute(builder: (context) => StudentEditProfileScreen()),
                 );
               },
             ),
