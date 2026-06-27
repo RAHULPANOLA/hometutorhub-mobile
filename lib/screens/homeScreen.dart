@@ -296,7 +296,7 @@ Widget _buildStudentDashboard() {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const StudentChangePasswordScreen()),
+                  MaterialPageRoute(builder: (context) => StudentChangePasswordScreen()),
                 );
               },
             ),
@@ -347,7 +347,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const AcceptedStudentsScreen()),
+                    MaterialPageRoute(builder: (context) => AcceptedStudentsScreen()),
                   );
                 },
               ),
@@ -358,7 +358,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PostCourseScreen()),
+                    MaterialPageRoute(builder: (context) => PostCourseScreen()),
                   );
                 },
               ),
@@ -369,7 +369,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const TeacherCoursesScreen()),
+                    MaterialPageRoute(builder: (context) => TeacherCoursesScreen()),
                   );
                 },
               ),
@@ -380,7 +380,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const ScheduleLiveClassScreen()),
+                    MaterialPageRoute(builder: (context) => ScheduleLiveClassScreen()),
                   );
                 },
               ),
@@ -391,7 +391,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const TeacherLiveClassesScreen()),
+                    MaterialPageRoute(builder: (context) => TeacherLiveClassesScreen()),
                   );
                 },
               ),
@@ -402,7 +402,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const TeacherPaymentsScreen()),
+                    MaterialPageRoute(builder: (context) => TeacherPaymentsScreen()),
                   );
                 },
               ),
@@ -413,7 +413,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const BuyPointsScreen()),
+                    MaterialPageRoute(builder: (context) => BuyPointsScreen()),
                   );
                 },
               ),
@@ -424,7 +424,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const TeacherEditProfileScreen()),
+                    MaterialPageRoute(builder: (context) => TeacherEditProfileScreen()),
                   );
                 },
               ),
@@ -435,7 +435,7 @@ Widget _buildStudentDashboard() {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const FeedbackScreen()),
+                    MaterialPageRoute(builder: (context) => FeedbackScreen()),
                   );
                 },
               ),
